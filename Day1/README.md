@@ -1,5 +1,5 @@
-# Band Name Generator
-Done by: Vindhya Hasini
+# Day 01: Band Name Generator
+Author: Vindhya Hasini
 
 ## Description
 This program asks the user for the city they grew up in and their pet's name.
