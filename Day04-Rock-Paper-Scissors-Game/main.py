@@ -32,6 +32,7 @@ print("Welcome to the Python Rock-Paper-Scissors Game!")
 user_choice = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors: \n")
 
 if user_choice.isdigit():
+    user_choice = int(user_choice)
     if user_choice in [0, 1, 2]:
         print(rps[user_choice])
 
