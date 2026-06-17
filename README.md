@@ -16,6 +16,8 @@ for Software Engineering, AI and Machine Learning.
 
 ## Progress
 
+Current Progress: 4/100 Days Completed
+
 | Day | Project Name             | Status      |
 |-----|--------------------------|-------------|
 | 01  | Band Name Generator      | ✅ Completed |
@@ -42,6 +44,13 @@ Day100-Capstone Project/
 * Git
 * GitHub
 * PyCharm
+
+## Course
+
+This repository follows:
+
+Dr. Angela Yu's
+100 Days of Code: The Complete Python Pro Bootcamp
 
 ## Author
 Vindhya Hasini
