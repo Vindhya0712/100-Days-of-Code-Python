@@ -16,12 +16,15 @@ for Software Engineering, AI and Machine Learning.
 
 ## Progress
 
-| Day | Project Name        | Status      |
-|-----|---------------------|-------------|
-| 01  | Band Name Generator | ✅ Completed |
-| 02  | Tip Calculator      | ✅ Completed |
-| 03  | Coming Soon         | ⌛           |
-| 04  | Coming Soon         | ⌛           |
+| Day | Project Name             | Status      |
+|-----|--------------------------|-------------|
+| 01  | Band Name Generator      | ✅ Completed |
+| 02  | Tip Calculator           | ✅ Completed |
+| 03  | Treasure Island          | ✅ Completed |
+| 04  | Rock Paper Scissors Game | ✅ Completed |
+| 05 | Coming Soon | ⌛ |
+| 06 | Coming Soon | ⌛ |
+
 
 ## Repository Structure
 
