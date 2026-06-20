@@ -26,7 +26,8 @@ Current Progress: 5/100 Days Completed
 | 04  | Rock Paper Scissors Game | ✅ Completed |
 | 05  | Password Generator       | ✅ Completed |
 | 07  | Hangman Game             | ✅ Completed |
-
+| 08 | Coming Soon | ⌛ |
+| 09 | Coming Soon | ⌛ |
 
 ## Repository Structure
 
