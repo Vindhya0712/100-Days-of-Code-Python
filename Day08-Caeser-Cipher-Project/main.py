@@ -5,7 +5,7 @@ lower_alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm
 upper_alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 
-def ceasar(original_text, shift_amount, encode_decode):
+def caesar(original_text, shift_amount, encode_decode):
     output_text = ''
     if encode_decode == "decode":
         shift_amount = shift_amount * (-1)
@@ -13,6 +13,7 @@ def ceasar(original_text, shift_amount, encode_decode):
     characters_encrypted = 0
     symbols_preserved = 0
     spaces_preserved = 0
+    numbers_preserved = 0
 
     for letter in original_text:
 
@@ -33,8 +34,12 @@ def ceasar(original_text, shift_amount, encode_decode):
                 output_text += letter
                 spaces_preserved += 1
             else:
-                output_text += letter
-                symbols_preserved += 1
+                if letter.isdigit():
+                    output_text += letter
+                    numbers_preserved += 1
+                else:
+                    output_text += letter
+                    symbols_preserved += 1
 
     print(f"""Here is the {encode_decode}d text: {output_text}
 Characters encrypted/decrypted = {characters_encrypted}
@@ -56,14 +61,14 @@ Type the index number: """))
         direction = 'encode'
         text = input("Type your message:\n")
         shift = int(input("Type the shift number:\n"))
-        ceasar(original_text=text, shift_amount=shift, encode_decode=direction)
+        caesar(original_text=text, shift_amount=shift, encode_decode=direction)
         should_continue = True
 
     elif choice == 2:
         direction = 'decode'
         text = input("Type your message:\n")
         shift = int(input("Type the shift number:\n"))
-        ceasar(original_text=text, shift_amount=shift, encode_decode=direction)
+        caesar(original_text=text, shift_amount=shift, encode_decode=direction)
         should_continue = True
 
     elif choice == 3:
