@@ -1,18 +1,31 @@
 import random, hangman_art, hangman_words
 
 
+def validate_input(variable):
+    if variable.isdigit():
+        return None
+    elif variable.isalpha():
+        return variable.lower()
+    else:
+        return None
+
+
 def read_game_memory():
     with open("Hangman Gamer Accounts.txt", "a+") as f:
         f.seek(0)
         data = f.readlines()
         each_user = []
-        for stats in data:
-            user, win_number, loss_number = stats.split(',')
-            user = user.strip()
-            win_number = win_number.strip()
-            loss_number = loss_number.strip()
-            each_user.append([user, win_number, loss_number])
-    return each_user
+        if data == []:
+            return each_user
+        else:
+            for stats in data:
+                if stats is '':
+                    user, win_number, loss_number = stats.split(',')
+                    user = user.strip()
+                    win_number = win_number.strip()
+                    loss_number = loss_number.strip()
+                    each_user.append([user, win_number, loss_number])
+            return each_user
 
 
 def reconstruct_gamer_info(users_list):
@@ -76,6 +89,7 @@ def login_signup(user_dict):
 
 def title_casing(variable):
     words = variable.split()
+
     if len(words) == 0:
         return None
 
@@ -83,7 +97,7 @@ def title_casing(variable):
         if not word.isalpha():
             return None
 
-    return variable
+    return variable.title()
 
 
 def update_game_memory(updated_dict):
@@ -111,55 +125,63 @@ def hangman_game(username, user_dict):
 
     game_over = False
     correct_letters = []
+    guessed_letters = []
 
     while not game_over:
 
         print(f"****************************{lives}/6 LIVES LEFT****************************")
-        guess = input("Guess a letter: ").lower()
+        letter_guessed = input("Guess a letter: ")
+        guess = validate_input(letter_guessed)
 
-        display = ""
+        if guess is not None:
 
-        for letter in chosen_word:
-            if letter == guess:
-                display += letter
-                correct_letters.append(guess)
-            elif letter in correct_letters:
-                display += letter
+            display = ""
+
+            if guess in guessed_letters:
+                print(f"You've already guessed {guess}")
             else:
-                display += "_"
+                guessed_letters.append(guess)
 
-        print("Word to guess: " + display)
+                for letter in chosen_word:
+                    if letter == guess:
+                        display += letter
+                        correct_letters.append(guess)
+                    elif letter in correct_letters:
+                        display += letter
+                    else:
+                        display += "_"
 
-        if guess not in chosen_word:
-            lives -= 1
-            print(f"You guessed {guess}. That's not in the word. You lose a life!")
+                print("Word to guess: " + display)
 
-            if lives == 0:
-                game_over = True
+                if guess not in chosen_word:
+                    lives -= 1
+                    print(f"You guessed {guess}. That's not in the word. You lose a life!")
 
-                print(f"***********************IT WAS '{chosen_word}'"
-                      f"!YOU LOSE**********************")
-                print(hangman_art.stages[lives])
-                loss_num += 1
-                user_dict[username] = {'wins': win_num, 'losses': loss_num}
-                get_stats(username, user_dict)
-                update_game_memory(user_dict)
-                break
+                    if lives == 0:
+                        game_over = True
 
-        if guess in correct_letters:
-            print(f"You've already guessed {guess}")
+                        print(f"***********************IT WAS '{chosen_word}'"
+                              f"!YOU LOSE**********************")
+                        print(hangman_art.stages[lives])
+                        loss_num += 1
+                        user_dict[username] = {'wins': win_num, 'losses': loss_num}
+                        get_stats(username, user_dict)
+                        update_game_memory(user_dict)
+                        break
 
-        if "_" not in display:
-            game_over = True
-            print("****************************YOU WIN****************************")
-            win_num += 1
-            user_dict[username] = {'wins': win_num, 'losses': loss_num}
-            get_stats(username, user_dict)
-            update_game_memory(user_dict)
-            break
+                if "_" not in display:
+                    game_over = True
+                    print("****************************YOU WIN*****************************")
+                    win_num += 1
+                    user_dict[username] = {'wins': win_num, 'losses': loss_num}
+                    get_stats(username, user_dict)
+                    update_game_memory(user_dict)
+                    break
 
-        if lives > 0:
-            print(hangman_art.stages[lives])
+                if lives > 0:
+                    print(hangman_art.stages[lives])
+        else:
+            print("Invalid Guess. Please try guessing an alphabet")
 
 
 gamer_list = read_game_memory()
