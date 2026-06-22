@@ -46,7 +46,6 @@ The game includes visual hangman stages using ASCII art, life tracking, repeated
 * Input validation
 * Login/Sign-up to the game to store player data
 * Score tracking across multiple games
-* Option to replay without re-starting the program
 * Persistent player accounts using a text file
 * Automatic account creation for new players
 * Display player stats before and after each gameplay.
