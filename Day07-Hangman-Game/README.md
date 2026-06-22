@@ -22,7 +22,16 @@ The game includes visual hangman stages using ASCII art, life tracking, repeated
 * Game logic implementation
 * ASCII art integration
 
-## Features
+## Files in this directory
+| File Name                  | Description                                                                               |
+|----------------------------|-------------------------------------------------------------------------------------------|
+| main.py                    | Contains the simpler version of the game, completed in accordance with the course content |
+| hangman_upgraded.py        | Contains the upgraded version of the game with completely independent implementation      |
+| hangman_art.py             | Contains the ASCII art for the different stages in the game, and the game logo            |
+| hangman_words.py           | Contains the word list for the game                                                       |
+| Hangman Gamer Accounts.txt | Is a text file that contains user data for game login option                              | 
+
+## Features in the Original Version (main.py)
 * Random word selection
 * six-life hangman system
 * Visual hangman stages
@@ -32,13 +41,19 @@ The game includes visual hangman stages using ASCII art, life tracking, repeated
 * Repeated guess warning
 * Win/loss condition detection
 
-## Future Improvements
+## Features in Upgraded Version (hangman_upgraded.py)
 * Prevent repeated guesses from deducting lives
 * Input validation
-* Difficulty levels
-* Category-based word selection
+* Login/Sign-up to the game to store player data
 * Score tracking across multiple games
 * Option to replay without re-starting the program
+* Persistent player accounts using a text file
+* Automatic account creation for new players
+* Display player stats before and after each gameplay.
+* Win percentage calculation
+* Case-insensitive input handling
+* Support for multi-word usernames during sign-up/login
+* Handles empty account files without crashing
 
 ## Key Takeaways
 * Learned how to manage game state using variables and loops
