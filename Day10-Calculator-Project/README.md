@@ -2,8 +2,8 @@
 Author: Vindhya Hasini
 
 ## Description
-This is an interactive Python-friendly calculator featuring arithmetic operations, session-based memory storage and history tracking,
-error handling, and support for chain calculations.
+This is an interactive command-line calculator built in Python featuring arithmetic operations, session-based memory storage,
+history tracking, error handling, and support for chained calculations.
 
 This calculator supports operations like addition, subtraction, multiplication, division, modulo and power operations
 
@@ -60,7 +60,7 @@ This calculator supports operations like addition, subtraction, multiplication, 
 
 ## Key Takeaways
 * Dictionaries can be used to map operators to functions, making code easier to understand and maintain
-* Breaking a program into smaller functions to improve readability and maintainability
+* Breaking a program into smaller functions improves readability and maintainability of code
 * Error handling helps prevent program crashes 
 * Features such as memory and history can be implemented using lists
 * Sometimes bugs and program crashes reveal loopholes in the program design that give ideas to upgrade the project
