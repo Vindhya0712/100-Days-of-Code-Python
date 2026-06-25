@@ -47,10 +47,10 @@ Spaces preserved = {spaces_preserved}
 Symbols preserved = {symbols_preserved}""")
 
 
+print(logo)
 should_continue = True
 
 while should_continue:
-    print(logo)
     choice = int(input("""What do you want to do?
 1. Encode
 2. Decode
@@ -76,5 +76,5 @@ Type the index number: """))
         print("Goodbye!")
 
     else:
-        print("Invalid Input. Exiting")
-        should_continue = False
+        print("Invalid Input. Try Again.")
+        should_continue = True
