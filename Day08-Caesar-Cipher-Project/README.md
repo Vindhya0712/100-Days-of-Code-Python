@@ -7,6 +7,13 @@ This implements the Caesar Cipher, a simple encryption technique that shifts alp
 The program supports both encoding and decoding messages while preserving upper/lower case of alphabets, special characters, spaces and numbers.
 It also provides statistics about the encoding/decoding process.
 
+## Files in this directory
+| File Name                 | Description                                                                    | Status      |
+|---------------------------|--------------------------------------------------------------------------------|-------------|
+| main.py                   | Contains code for the basic version of the project                             | ✅ Completed |
+| art.py                    | Contains ASCII art to improve user experience on startup                       | ✅ Completed |
+| caesar_cipher_upgraded.py | Contains code for the upgraded version of the project with additional features | ✅ Completed |
+
 ## Concepts Learned
 * Python lists
 * Functions
@@ -31,10 +38,12 @@ It also provides statistics about the encoding/decoding process.
 * Exit option for terminating the program run
 * Supports repeated program runs without having to restart the program
 
-## Upcoming Features for Upgraded Version
+## Features in the Upgraded version (caesar_cipher_upgraded.py)
 * Input validation for menu choices and shift number
 * Save encryption history to text file
 * View previously encoded/decoded messages
+
+## Future Improvements
 * Allow users to clear stored history
 * Display total encryptions/decryptions
 
