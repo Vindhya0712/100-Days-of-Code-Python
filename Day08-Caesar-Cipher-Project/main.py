@@ -51,7 +51,7 @@ should_continue = True
 
 while should_continue:
     print(logo)
-    choice = int(input("""What do you want to do? 
+    choice = int(input("""What do you want to do?
 1. Encode
 2. Decode
 3. Exit
