@@ -16,7 +16,7 @@ for Software Engineering, AI and Machine Learning.
 
 ## Progress
 
-Current Progress: 8/100 Days Completed
+Current Progress: 10/100 Days Completed
 
 | Day | Project Name             | Status      |
 |-----|--------------------------|-------------|
@@ -26,8 +26,12 @@ Current Progress: 8/100 Days Completed
 | 04  | Rock Paper Scissors Game | ✅ Completed |
 | 05  | Password Generator       | ✅ Completed |
 | 07  | Hangman Game             | ✅ Completed |
-| 08 | Caesar Cipher Project    | ✅ Completed |
-| 09 | Coming Soon              | ⌛           |
+| 08  | Caesar Cipher Project    | ✅ Completed |
+| 09  | Blind Auction Project    | ✅ Completed |
+| 10  | Calculator Project       | ✅ Completed |
+| 11  | Blackjack Game           | ✅ Completed |
+| 12  | Coming Soon              | ⌛           |
+
 
 ## Repository Structure
 
