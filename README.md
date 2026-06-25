@@ -16,7 +16,7 @@ for Software Engineering, AI and Machine Learning.
 
 ## Progress
 
-Current Progress: 10/100 Days Completed
+Current Progress: 11/100 Days Completed
 
 | Day | Project Name             | Status      |
 |-----|--------------------------|-------------|
