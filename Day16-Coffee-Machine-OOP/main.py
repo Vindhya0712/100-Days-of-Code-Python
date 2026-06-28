@@ -10,6 +10,7 @@ money_machine_obj = MoneyMachine()
 
 continue_machine = True
 while continue_machine:
+    print("Welcome to PyCoffee: A Coffee Machine!")
     user_choice = input(f"What would you like to have? ({menu_items.get_items()}report/off): ").lower().strip()
 
     if user_choice == 'off':
