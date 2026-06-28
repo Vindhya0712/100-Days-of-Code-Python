@@ -16,24 +16,27 @@ for Software Engineering, AI and Machine Learning.
 
 ## Progress
 
-Current Progress: 14/100 Days Completed
+Current Progress: 16/100 Days Completed
 
-| Day | Project Name                | Status                                 |
-|-----|-----------------------------|----------------------------------------|
-| 01  | Band Name Generator         | ✅ Completed                            |
-| 02  | Tip Calculator              | ✅ Completed                            |
-| 03  | Treasure Island             | ✅ Completed                            |
-| 04  | Rock Paper Scissors Game    | ✅ Completed                            |
-| 05  | Password Generator          | ✅ Completed                            |
-| 06  | Work with Karel - the Robot | ✅ Completed on Reeborg's World website |
-| 07  | Hangman Game                | ✅ Completed                            |
-| 08  | Caesar Cipher Project       | ✅ Completed                            |
-| 09  | Blind Auction Project       | ✅ Completed                            |
-| 10  | Calculator Project          | ✅ Completed                            |
-| 11  | Blackjack Game              | ✅ Completed                            |
-| 12  | Number Guessing Game        | ✅ Completed                            |
-| 13  | Tips for Debugging          | ⏩ Lecture only                         |
-| 14  | Higher Lower Game           | ✅ Completed                            |
+| Day | Project Name                    | Status                                 |
+|-----|---------------------------------|----------------------------------------|
+| 01  | Band Name Generator             | ✅ Completed                            |
+| 02  | Tip Calculator                  | ✅ Completed                            |
+| 03  | Treasure Island                 | ✅ Completed                            |
+| 04  | Rock Paper Scissors Game        | ✅ Completed                            |
+| 05  | Password Generator              | ✅ Completed                            |
+| 06  | Work with Karel - the Robot     | ✅ Completed on Reeborg's World website |
+| 07  | Hangman Game                    | ✅ Completed                            |
+| 08  | Caesar Cipher Project           | ✅ Completed                            |
+| 09  | Blind Auction Project           | ✅ Completed                            |
+| 10  | Calculator Project              | ✅ Completed                            |
+| 11  | Blackjack Game                  | ✅ Completed                            |
+| 12  | Number Guessing Game            | ✅ Completed                            |
+| 13  | Tips for Debugging              | ⏩ Lecture only                         |
+| 14  | Higher Lower Game               | ✅ Completed                            |
+| 15  | Coffee Machine Project          | ✅ Completed                            |
+| 16  | Coffee Machine Project with OOP | ✅ Completed                            |
+| 17 | Coming Soon | ⌛ |
 
 
 ## Repository Structure
