@@ -18,7 +18,7 @@ def choose_question():
 
 
 def display_question_ask_answer(qstn, cnter):
-    print(f"\nQuestion {cnter + 1}/12 \n{qstn['text']}")
+    print(f"\nQuestion {cnter}/12 \n{qstn['text']}")
     answer = input("Is the above statement True or False? ").title()
     cnter += 1
     return answer
@@ -48,6 +48,7 @@ def game():
     while continue_choosing:
         question = choose_question()
         if question is not None:
+            counter += 1
             answer = display_question_ask_answer(question, counter)
             if check_answer(u_ans=answer, qst=question):
                 player_score += 1
