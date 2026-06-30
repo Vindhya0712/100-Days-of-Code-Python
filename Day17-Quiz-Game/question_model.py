@@ -4,5 +4,4 @@ class Question:
         self.answer = q_ans
 
 
-new_question = Question("The question's text", "The answer's text")
-print(new_question.text)
+
