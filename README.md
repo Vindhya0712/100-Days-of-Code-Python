@@ -16,7 +16,7 @@ for Software Engineering, AI and Machine Learning.
 
 ## Progress
 
-Current Progress: 16/100 Days Completed
+Current Progress: 17/100 Days Completed
 
 | Day | Project Name                    | Status                                 |
 |-----|---------------------------------|----------------------------------------|
@@ -36,7 +36,8 @@ Current Progress: 16/100 Days Completed
 | 14  | Higher Lower Game               | ✅ Completed                            |
 | 15  | Coffee Machine Project          | ✅ Completed                            |
 | 16  | Coffee Machine Project with OOP | ✅ Completed                            |
-| 17 | Coming Soon | ⌛ |
+| 17 | Quiz Game OOP                   | ✅ Completed                            |
+| 18 | Coming Soon | ⌛ |
 
 
 ## Repository Structure
@@ -57,6 +58,13 @@ Day100-Capstone Project/
 * PyCharm
 * Thonny
 * Text Files
+
+
+## Technologies Learnt About
+* Python data structures -- lists, dictionaries and tuples
+* the random module
+* PrettyTable module
+* turtle module
 
 ## Course
 
