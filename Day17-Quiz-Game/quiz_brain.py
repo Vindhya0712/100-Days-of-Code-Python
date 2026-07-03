@@ -42,6 +42,3 @@ class QuizBrain:
             print(f"The correct answer was: {c_ans}")
         print(f"Your current score: {self.score}/{self.question_number}")
         print("\n")
-
-
-
