@@ -47,9 +47,10 @@ and make the game more interactive.
   * No.of incorrectly answered questions
   * Accuracy percentage
 * End-of-game performance message based on the player's accuracy
+* Replay option to restart the game without having to re-run the program
+* Multiple users can play the game in a single program run
 
 ## Future Improvements
-* Replay option to restart the game without having to re-run the program
 * Persistent high score tracking using file handling
 * Player profiles and game history
 * Timed quiz mode
