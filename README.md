@@ -7,8 +7,10 @@ This repository contains all the projects I build while completing Dr. Angela Yu
 I am documenting my progress through the course by uploading each day's project along with:
 * Source-code
 * Project-specific README files
+* Listing out files in each directory
 * Concepts Learned
 * Key Takeaways
+* Challenges Faced
 
 My goal is to strengthen my Python programming skills,
 build a strong project portfolio, and develop a solid foundation
