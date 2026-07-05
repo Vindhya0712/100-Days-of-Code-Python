@@ -8,17 +8,6 @@ This program helped me understand Object-Oriented-Programming (OOP) by organizin
 modules. It also strengthened my problem-solving skills, as I challenged myself to implement several features before
 watching the solution walkthrough.
 
-## Gameplay
-![Snake Gameplay](game_assets/snake%20game%20code%20run.gif)
-
-Start-up screen
-
-![Snake Gameplay](game_assets/snake%20game%20startup%20screen.jpg)
-
-Game Over screen
-
-![Snake Gameplay](game_assets/snake%20game%20exit%20screen.jpg)
-
 
 ## Files in this directory
 | File Name     | Description                                                                                                                                                   | Status      |
@@ -43,6 +32,7 @@ Game Over screen
 * Code refactoring
 * the random module
 
+
 ## Features
 * Snake moves smoothly using keyboard controls -- through all the 4 arrow keys
 * Food appears at random locations
@@ -53,6 +43,7 @@ Game Over screen
   * The snake collides with its own tail
 * Final score is displayed when the game ends
 
+
 ## Future Improvements
 * Persistent high score tracking
 * Restart game option
@@ -60,6 +51,7 @@ Game Over screen
 * Special food with bonus points
 * Player stats
 * Multiple themes
+
 
 ## Key Takeaways
 This project was my first larger Python application built over multiple classes.
@@ -88,6 +80,22 @@ Below are some parts of the program I implemented or improved on my own:
 * Created the Scoreboard class by applying concepts learnt while creating the Food class
 * Used list-slicing to simplify tail collision detection instead of checking every segment individually
 * Refactored portions of the snake creation logic to make the code cleaner and more readable
+
+### Developer Notes
+This project marked a turning point in my Python journey. It was my first experience building a larger application using 
+multiple classes. I especially enjoyed implementing the scoreboard independently by applying concepts from the Food 
+class, and simplifying tail collision detection using Python list slicing.
+
+## Gameplay
+![Snake Gameplay](game_assets/snake%20game%20code%20run.gif)
+
+Start-up screen
+
+![Snake Gameplay](game_assets/snake%20game%20startup%20screen.jpg)
+
+Game Over screen
+
+![Snake Gameplay](game_assets/snake%20game%20exit%20screen.jpg)
 
 
 ## Note
