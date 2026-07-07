@@ -1,5 +1,9 @@
 from turtle import Turtle
 
+MOVE_DISTANCE = 20
+TOP_BOUNDARY = 250
+BOTTOM_BOUNDARY = -250
+
 
 class Paddle(Turtle):
     def __init__(self, pos_tuple):
@@ -13,8 +17,10 @@ class Paddle(Turtle):
 
 
     def move_up(self):
-        self.forward(20)
+        if self.ycor() < TOP_BOUNDARY:
+            self.forward(MOVE_DISTANCE)
 
 
     def move_down(self):
-        self.backward(20)
+        if self.ycor() > BOTTOM_BOUNDARY:
+            self.backward(MOVE_DISTANCE)
