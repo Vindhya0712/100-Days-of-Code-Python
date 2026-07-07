@@ -18,7 +18,7 @@ for Software Engineering, AI and Machine Learning.
 
 ## Progress
 
-Current Progress: 21/100 Days Completed
+Current Progress: 22/100 Days Completed
 
 | Day    | Project Name                      | Status                                 |
 |--------|-----------------------------------|----------------------------------------|
@@ -42,7 +42,7 @@ Current Progress: 21/100 Days Completed
 | 18     | Hirst Painting                    | ✅ Completed                            |
 | 19     | Turtle Race Game                  | ✅ Completed                            |
 | 20, 21 | Snake Game (Built over both days) | ✅ Completed                            |
-
+| 22     | Pong Game                         | ✅ Completed                            |
 
 ## Repository Structure
 
