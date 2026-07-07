@@ -27,7 +27,7 @@ class Scoreboard(Turtle):
     def divide_screen(self):
         self.color('white')
         self.shape('square')
-        self.pensize(10)
+        self.pensize(5)
         self.penup()
         self.setheading(90)
         self.goto(x=0, y=-300)
