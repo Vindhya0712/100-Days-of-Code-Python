@@ -34,11 +34,9 @@ while game_is_on:
 
     # Detect collision with both paddle
     if ball.distance(right_paddle) < 50 and ball.xcor() > 320:
-        print('Made contact')
         ball.bounce_x()
 
     elif ball.distance(left_paddle) < 50 and ball.xcor() < -320:
-        print('Made contact')
         ball.bounce_x()
 
     #Detect if right paddle missed the ball
