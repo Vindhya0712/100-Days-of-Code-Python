@@ -67,3 +67,10 @@ class Snake:
         """Move snake in East direction. If snake is facing West, then it can't move East"""
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
+
+    def reset_snake(self):
+        for segment in self.snake_segment:
+            segment.goto(1000, 1000)
+        self.snake_segment.clear()
+        self.create_snake()
+        self.head = self.snake_segment[0]

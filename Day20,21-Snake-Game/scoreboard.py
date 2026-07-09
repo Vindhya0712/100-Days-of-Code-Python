@@ -1,4 +1,5 @@
 from turtle import Turtle
+import time
 
 ALIGNMENT = 'center'
 FONT = ('Courier', 16, 'normal')
@@ -8,6 +9,7 @@ class Scoreboard(Turtle):
     def __init__(self):
         """Creates a scorecard object and initializes essential attributes"""
         super().__init__()
+        self.high_score = 0
         self.score = 0
         self.penup()
         self.hideturtle()
@@ -19,7 +21,7 @@ class Scoreboard(Turtle):
     def print_score(self):
         """Updates score and prints it onto the Turtle Graphics Window"""
         self.clear()
-        self.write(f'Score: {self.score}', align=ALIGNMENT, font=FONT)
+        self.write(f'Score: {self.score} High Score: {self.high_score}', align=ALIGNMENT, font=FONT)
 
 
     def end_game_msg(self):
@@ -28,3 +30,14 @@ class Scoreboard(Turtle):
         self.write('GAME OVER.', align=ALIGNMENT, font=FONT)
 
 
+    def reset_high_score(self):
+        if self.score > self.high_score:
+            self.high_score = self.score
+        self.score = 0
+
+
+    def clear_screen(self):
+        self.clear()
+        self.goto(x=0, y=270)
+        self.reset_high_score()
+        self.print_score()
