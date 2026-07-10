@@ -16,6 +16,7 @@ watching the solution walkthrough.
 | snake.py      | Contains attributes and methods related to the snake -- creating a snake, increasing its length and controlling its movement                                  | ✅ Completed |
 | food.py       | Contains attributes and methods related to the food -- creating pieces and food, and getting them to appear at random locations                               | ✅ Completed |
 | scoreboard.py | Contains attributes and methods related to the scorecard -- initializing score to 0, increasing the score, displaying the score on the Turtle Graphics Window | ✅ Completed |
+| data.txt      | A text file that contains the integral value of the player's high score                                                                                       | ✅ Completed |
 | game_assets   | Contains images and videos related to the output of the code, purely meant for being added to the README                                                      | ✅ Completed |
 
 
@@ -42,11 +43,11 @@ watching the solution walkthrough.
   * The snake collides with the wall
   * The snake collides with its own tail
 * Final score is displayed when the game ends
+* Persistent high score tracking
+* Game restarts after a brief display of the 'game over' message. The game keeps restarting until the user chooses to exit
 
 
 ## Future Improvements
-* Persistent high score tracking
-* Restart game option
 * Multiple difficulty levels
 * Special food with bonus points
 * Player stats
