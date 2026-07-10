@@ -1,5 +1,4 @@
 from turtle import Turtle
-import time
 
 ALIGNMENT = 'center'
 FONT = ('Courier', 16, 'normal')
@@ -9,7 +8,12 @@ class Scoreboard(Turtle):
     def __init__(self):
         """Creates a scorecard object and initializes essential attributes"""
         super().__init__()
-        self.high_score = 0
+        with open('data.txt') as file:
+            file.seek(0)
+            high_score = file.read()
+            if high_score == '':
+                self.high_score = 0
+            self.high_score = int(high_score)
         self.score = 0
         self.penup()
         self.hideturtle()
@@ -33,6 +37,8 @@ class Scoreboard(Turtle):
     def reset_high_score(self):
         if self.score > self.high_score:
             self.high_score = self.score
+            with open('data.txt', 'w') as f:
+                f.write(f"{self.high_score}")
         self.score = 0
 
 
