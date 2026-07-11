@@ -18,7 +18,7 @@ for Software Engineering, AI and Machine Learning.
 
 ## Progress
 
-Current Progress: 23/100 Days Completed
+Current Progress: 24/100 Days Completed
 
 | Day    | Project Name                               | Status                                 |
 |--------|--------------------------------------------|----------------------------------------|
@@ -44,6 +44,8 @@ Current Progress: 23/100 Days Completed
 | 20, 21 | Snake Game (Built over both days)          | ✅ Completed                            |
 | 22     | Pong Game                                  | ✅ Completed                            |
 | 23     | Turtle Crossing Game -- Capstone Project 2 | ✅ Completed                            |
+| 24     | Mail Merge Project                         | ✅ Completed                            |
+| 25     | Coming Soon                                | ⌛                                      |
 
 ## Repository Structure
 
