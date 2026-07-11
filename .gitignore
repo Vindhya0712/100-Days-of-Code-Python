@@ -12,3 +12,10 @@ __pycache__/
 # OS Files
 .DS_Store
 Thumbs.db
+
+# Other files
+letter_for_Ariana Grande.txt
+letter_for_Gracie Abrams.txt
+letter_for_Olivia Rodrigo.txt
+letter_for_Sabrina Carpenter.txt
+letter_for_Taylor Swift.txt
