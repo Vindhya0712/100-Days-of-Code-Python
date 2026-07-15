@@ -16,6 +16,7 @@ continues until all states are guessed correctly.
 | blank_states_img.gif | Contains an image of the US map that acts as the background for the game                                  | ✅ Completed |
 | scorecard.py         | Contains the class and method definition for maintaining and updating the user's score                    | ✅ Completed |
 | turtle_writer.py     | Contains the class and method definitions that write the state name at its respective position on the map | ✅ Completed |
+| game_assets          | A folder that contains images of the game and other data required for the game                            | ✅ Completed |
 
 
 ## Concepts Learned
@@ -31,3 +32,64 @@ continues until all states are guessed correctly.
 * Managing game state using lists and conditional logic
 * Updating graphical interfaces dynamically based on user interaction
 * Combining external datasets with graphical applications to create interactive programs
+
+
+# Features
+* Interactive US map using Turtle Graphics
+* CSV data handling with Pandas
+* Text input for state guesses
+* Correct answers displayed on the map
+* Live score tracking
+* Duplicate answer detection
+* OOP design with separate classes for:
+  * Scoreboard -- Maintain and update the user's score
+  * Turtle Writer -- write the names of correctly guessed states at their respective positions
+* Uses DataFrames and Series for coordinate mapping
+
+## Future Improvements
+* Create an India States Game using the same architecture
+* Introduce different difficulty level -- timed quiz, limited guesses, etc
+* Generate a CSV file containing all missed states when the player quits or runs out of time
+* Improve label positioning for smalled East Coast states to improve readability
+* Make state name matching more flexible by handling short-forms and minor typos in the spellings
+* Add persistent high score tracking using file handling
+* Upgrade the interface by adding buttons instead of text prompts using Tkinter
+
+## Key Takeaways
+This project helped me gain hands-on experience with:
+* Reading CSV files using the Pandas library
+* Working with DataFrames and Series, and learn some of their methods
+* Filtering rows of data based on user's input
+* Extracting values from DataFrames
+* Combining data analysis with graphical applications
+* Separating responsibilities among classes by using an OOP design
+
+## Challenges Faced
+The main challenge I faced while coding this game was the fact that I was working with the Pandas library for the first time.
+I had to spend a lot of time reading the documentation, understanding logic and exploring examples online. However, all
+this effort helped me expand my knowledge to one of the most useful Python libraries.
+
+## How to play?
+1. Clone the repository
+2. Navigate to the project folder
+3. Install Pandas (ignore if already installed)
+4. Run main.py file
+5. Enter the name of a US State
+6. Correct guesses appear on the map
+7. Score is increased by one
+8. Duplicate guesses are ignored
+9. Guess all 50 states to complete the game
+
+## Preview
+* Game start-up screen
+
+![US_States_Game](game_assets/game%20startup%20screen.png)
+
+* End-of-Game screen
+
+![US_States_Game](game_assets/game%20end%20screen.png)
+
+## Note
+This project was completed as a part of Dr. Angela Yu's 100 Days of Code: The Complete Python Pro Bootcamp
+
+All future upgrades will be independent implementations

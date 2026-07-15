@@ -3,10 +3,11 @@ import pandas as pd
 from scorecard import Scoreboard
 from turtle_writer import TurtleWriter
 
-states_dataset = pd.read_csv('50_states.csv')
+states_dataset = pd.read_csv('game_assets/50_states.csv')
 states = states_dataset['state'].to_list()
 
 screen = Screen()
+screen.title("Vindhya's US States Game")
 screen.bgpic('blank_states_img.gif')
 screen.tracer(0)
 
@@ -29,9 +30,6 @@ while scorecard.score < 50:
             ycor = state_deets['y'].iloc[0]
             turtle_writer.write_state_name(xpos=xcor, ypos=ycor, state_name=user_input)
             scorecard.update_score()
-            print(f"{user_input} is correct")
-    else:
-        print(f"{user_input}Wrong")
 
 print(f"Your final score: {scorecard.score}")
 print(f'{user_answers}')
