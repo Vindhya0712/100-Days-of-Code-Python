@@ -18,7 +18,7 @@ for Software Engineering, AI and Machine Learning.
 
 ## Progress
 
-Current Progress: 24/100 Days Completed
+Current Progress: 25/100 Days Completed
 
 | Day    | Project Name                               | Status                                 |
 |--------|--------------------------------------------|----------------------------------------|
@@ -45,7 +45,8 @@ Current Progress: 24/100 Days Completed
 | 22     | Pong Game                                  | ✅ Completed                            |
 | 23     | Turtle Crossing Game -- Capstone Project 2 | ✅ Completed                            |
 | 24     | Mail Merge Project                         | ✅ Completed                            |
-| 25     | Coming Soon                                | ⌛                                      |
+| 25     | US States Game                             | ✅ Completed                            |
+| 26     | Coming Soon                                | ⌛                                      |
 
 ## Repository Structure
 
@@ -72,6 +73,8 @@ Day100-Capstone Project/
 * the random module
 * PrettyTable module
 * turtle module
+* Pandas library
+* DataFrames and Series
 
 ## Course
 
