@@ -3,7 +3,7 @@ Author: Vindhya Hasini
 
 ## Description
 An interactive Python game built using the Turtle Graphics Module and the Pandas Library, where players test their
-knowledge by guessing all 50 states in the US
+knowledge by guessing all 50 states in the US. This project is enhanced over the course content with independent implementations.
 
 Each correct guess is displayed at its corresponding location on the map while the score updates in real time. The game
 continues until all states are guessed correctly.
@@ -45,6 +45,9 @@ continues until all states are guessed correctly.
   * Scoreboard -- Maintain and update the user's score
   * Turtle Writer -- write the names of correctly guessed states at their respective positions
 * Uses DataFrames and Series for coordinate mapping
+* Multiple ways to quit the game -- supported via typing 'quit' or clicking the Cancel button in the dialog box
+* Lists the states the user failed to guess
+* Accuracy percentage and final score are displayed on game end
 
 ## Future Improvements
 * Create an India States Game using the same architecture
@@ -63,11 +66,17 @@ This project helped me gain hands-on experience with:
 * Extracting values from DataFrames
 * Combining data analysis with graphical applications
 * Separating responsibilities among classes by using an OOP design
+* Using the Cancel button to perform an action in main.py
 
 ## Challenges Faced
 The main challenge I faced while coding this game was the fact that I was working with the Pandas library for the first time.
 I had to spend a lot of time reading the documentation, understanding logic and exploring examples online. However, all
 this effort helped me expand my knowledge to one of the most useful Python libraries.
+
+Another major challenge I faced was when I decided to add a 'quit' option to the game. I figured it out quite easily, but 
+the main challenge came up when I accidentally clicked the Cancel button and caused a program crash. This unprecedented 
+bug helped me add another feature to my project -- 'Multiple ways to quit the game'. It taught me that testing edge cases
+is just as important as testing code functionality.
 
 ## How to play?
 1. Clone the repository
@@ -79,6 +88,7 @@ this effort helped me expand my knowledge to one of the most useful Python libra
 7. Score is increased by one
 8. Duplicate guesses are ignored
 9. Guess all 50 states to complete the game
+10. Type 'quit' or just use the Cancel button to finish the game
 
 ## Preview
 * Game start-up screen
