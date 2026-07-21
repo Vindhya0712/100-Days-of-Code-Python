@@ -22,10 +22,6 @@ while scorecard.score < 50:
 
     if user_input is None:
         print("You quit the game.")
-        print("Missed States: \n")
-        for state in states:
-            if state not in user_answers:
-                print(f"{state}")
         break
 
     else:
@@ -44,12 +40,16 @@ while scorecard.score < 50:
 
         elif user_input == 'Quit':
             print(f"You quit the game.")
-            print("Missed States: \n")
-            for state in states:
-                if state not in user_answers:
-                    print(f"{state}")
             break
 
 accuracy = round((scorecard.score / 50) * 100, 2)
-print(f"\nYour final score: {scorecard.score} \nAccuracy: {accuracy}%")
+if accuracy != 100.00:
+    print("States you missed: \n")
+    for state in states:
+        if state not in user_answers:
+            print(f"{state}")
+    print(f"\nYour final score: {scorecard.score} \nAccuracy: {accuracy}%")
+else:
+    print(f"\nCongratulations! \nYou guessed all 50 states!\n")
+    print(f"\nYour final score: {scorecard.score} \nAccuracy: {accuracy}%")
 screen.exitonclick()
