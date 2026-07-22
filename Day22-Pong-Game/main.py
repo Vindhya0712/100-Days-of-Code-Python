@@ -32,7 +32,7 @@ while game_is_on:
         # Bounce
         ball.bounce_y()
 
-    # Detect collision with both paddle
+    # Detect collision with both paddles
     if ball.distance(right_paddle) < 50 and ball.xcor() > 320:
         ball.bounce_x()
 
@@ -49,6 +49,7 @@ while game_is_on:
         scoreboard.r_score += 1
         scoreboard.update_score()
         ball.restart()
+
 
 
 screen.exitonclick()

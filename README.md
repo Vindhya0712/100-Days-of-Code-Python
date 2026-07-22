@@ -46,7 +46,8 @@ Current Progress: 25/100 Days Completed
 | 23     | Turtle Crossing Game -- Capstone Project 2 | ✅ Completed                            |
 | 24     | Mail Merge Project                         | ✅ Completed                            |
 | 25     | US States Game                             | ✅ Completed                            |
-| 26     | Coming Soon                                | ⌛                                      |
+| 25 +   | India States Game (Independent Project)    | ✅ Completed                            |
+| 26 | Coming Soon | ⌛ |
 
 ## Repository Structure
 
