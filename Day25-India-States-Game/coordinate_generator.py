@@ -14,9 +14,8 @@ turtle.penup()
 def click(x, y):
     turtle.goto(x, y)
     user_input = screen.textinput(prompt='State name', title='Guess the state')
-    turtle.write(arg=user_input, align='center')
-    #turtle.write(f"{int(x)}, {int(y)}", align='left')
-    print(int(x), int(y))
+    turtle.write(arg=user_input.title(), align='center', font=('Arial', 10, 'bold'))
+    print(f"{user_input}, {int(x)}, {int(y)}")
 
 
 screen.onscreenclick(click)

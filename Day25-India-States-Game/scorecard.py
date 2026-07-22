@@ -9,7 +9,7 @@ class Scoreboard(Turtle):
         super().__init__()
         self.hideturtle()
         self.penup()
-        self.goto(x=-350, y=350)
+        self.goto(x=-380, y=350)
         self.color('black')
         self.score = 0
 

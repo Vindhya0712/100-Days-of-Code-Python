@@ -39,18 +39,18 @@ while scorecard.score < 36:
                 turtle_writer.write_state_name(xpos=xcor, ypos=ycor, state_name=user_input)
                 scorecard.update_score()
 
-        elif user_input == 'Quit':
+        elif user_input == 'quit':
             print(f"You quit the game.")
             break
 
 accuracy = round((scorecard.score / 36) * 100, 2)
 if accuracy != 100.00:
-    print("States you missed: \n")
+    print("States/UTs you missed: \n")
     for state in states:
         if state not in user_answers:
             print(f"{state}")
     print(f"\nYour final score: {scorecard.score} \nAccuracy: {accuracy}%")
 else:
-    print(f"\nCongratulations! \nYou guessed all 50 states!\n")
+    print(f"\nCongratulations! \nYou guessed all 28 States and 8 Union Territories!\n")
     print(f"\nYour final score: {scorecard.score} \nAccuracy: {accuracy}%")
 screen.exitonclick()

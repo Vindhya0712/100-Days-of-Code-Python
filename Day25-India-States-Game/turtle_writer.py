@@ -1,7 +1,7 @@
 from turtle import Turtle
 
 
-FONT = ('Arial', 8, 'normal')
+FONT = ('Arial', 10, 'bold')
 
 
 class TurtleWriter(Turtle):
@@ -17,6 +17,7 @@ class TurtleWriter(Turtle):
 
     def write_state_name(self, xpos, ypos, state_name):
         self.goto(x=xpos, y=ypos)
+        state_name = state_name.title()
         if state_name in self.ut:
             self.color('red')
             self.write(arg=state_name, align='center', font=FONT)
