@@ -3,7 +3,7 @@ import pandas as pd
 from scorecard import Scoreboard
 from turtle_writer import TurtleWriter
 
-states_dataset = pd.read_csv('states_uts.csv')
+states_dataset = pd.read_csv('game_assets/states_uts.csv')
 states = states_dataset['state_ut'].to_list()
 
 screen = Screen()
