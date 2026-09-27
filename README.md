@@ -20,8 +20,8 @@ for Software Engineering, AI and Machine Learning.
 
 Current Progress: 25/100 Days Completed
 
-| Day    | Project Name                               | Status                                 |
-|--------|--------------------------------------------|----------------------------------------|
+| Day    | Project Name                               | Status                                  |
+|--------|--------------------------------------------|-----------------------------------------|
 | 01     | Band Name Generator                        | ✅ Completed                            |
 | 02     | Tip Calculator                             | ✅ Completed                            |
 | 03     | Treasure Island                            | ✅ Completed                            |
@@ -47,7 +47,8 @@ Current Progress: 25/100 Days Completed
 | 24     | Mail Merge Project                         | ✅ Completed                            |
 | 25     | US States Game                             | ✅ Completed                            |
 | 25 +   | India States Game (Independent Project)    | ✅ Completed                            |
-| 26 | Coming Soon | ⌛ |
+| 26     | NATO Phonetic Alphabet Generator           | ✅ Completed                            |
+| 27     | Coming Soon                                | ⌛                                      |
 
 ## Repository Structure
 
