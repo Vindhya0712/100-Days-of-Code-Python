@@ -12,7 +12,7 @@ SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
 
-# ---------------------------- TIMER RESET ------------------------------- # 
+# ---------------------------- TIMER RESET ------------------------------- #
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 
@@ -20,7 +20,21 @@ reps = 0
 def start_timer():
     """A function tied to the press of the start button to start a countdown"""
 
-    countdown(5 * 60)
+    global reps
+    reps += 1
+    work_sec = WORK_MIN * 60
+    short_break_sec = SHORT_BREAK_MIN * 60
+    long_break_sec = LONG_BREAK_MIN * 60
+
+    if reps % 8 == 0:
+        timer.config(text="Break", fg=RED)
+        countdown(long_break_sec)
+    elif reps % 2 == 0:
+        timer.config(text="Break", fg=PINK)
+        countdown(short_break_sec)
+    else:
+        timer.config(text="Work", fg=GREEN)
+        countdown(work_sec)
     #how do i get it to countdown from say 5 minutes? Well, gotta multiply 5 by 60, so that when the
     # countdown function gets called, it counts down for 300 seconds....which is essentially 5 mins....but there's a bit
     #of a design issue....cuz the timer shows an explicit countdown from 300...we don't want that...what to do?
@@ -49,6 +63,13 @@ def countdown(count):
     canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
     if count > 0:
         window.after(1000, countdown, count-1)
+    else:
+        start_timer() #calling the timer function again once we count down to zero
+        #for every 2 reps, we have completed one 25min work session...one checkmark for every work session
+        marks = ""
+        for i in range(0, math.floor(reps/2)):
+            marks += "✅"
+        tick.config(text=marks)
 
 
 # ---------------------------- UI SETUP ------------------------------- #
@@ -73,7 +94,7 @@ start_button.grid(row=2, column=0)
 reset_button = Button(text="Reset", highlightthickness=0)
 reset_button.grid(row=2, column=2)
 
-tick = Label(text="✅", fg=GREEN, bg=YELLOW, highlightthickness=0)
+tick = Label(text="", fg=GREEN, bg=YELLOW, highlightthickness=0) #start out as empty
 tick.grid(row=3, column=1)
 
 window.mainloop()
