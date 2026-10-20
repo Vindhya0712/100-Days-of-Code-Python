@@ -1,4 +1,5 @@
 from tkinter import *
+import math
 
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
@@ -9,6 +10,7 @@ FONT_NAME = "Courier"
 WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
+reps = 0
 
 # ---------------------------- TIMER RESET ------------------------------- # 
 
@@ -17,7 +19,11 @@ LONG_BREAK_MIN = 20
 
 def start_timer():
     """A function tied to the press of the start button to start a countdown"""
-    countdown(5)
+
+    countdown(5 * 60)
+    #how do i get it to countdown from say 5 minutes? Well, gotta multiply 5 by 60, so that when the
+    # countdown function gets called, it counts down for 300 seconds....which is essentially 5 mins....but there's a bit
+    #of a design issue....cuz the timer shows an explicit countdown from 300...we don't want that...what to do?
 
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
@@ -25,7 +31,22 @@ def start_timer():
 
 def countdown(count):
     """A recursive function that changes the timer_text on every run"""
-    canvas.itemconfig(timer_text, text=count)
+
+    #total seconds / 60 = minutes remaining
+    count_min = math.floor(count / 60)
+    #total seconds % 60 = seconds remaining
+    count_sec = count % 60
+
+    #Dynamic Typing makes my life easy here!
+    if count_sec == 0:
+        count_sec = "00"
+    elif count_sec < 10:
+        count_sec = f"0{count_sec}"
+
+    if count_min == 0:
+        count_min = "00"
+
+    canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
     if count > 0:
         window.after(1000, countdown, count-1)
 
