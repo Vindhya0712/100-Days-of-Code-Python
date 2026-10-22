@@ -11,8 +11,18 @@ WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
+timer = None #setting the initial value of this variable to None
 
 # ---------------------------- TIMER RESET ------------------------------- #
+
+
+def reset_timer():
+    window.after_cancel(timer)
+    timer_label.config(text="Timer")
+    canvas.itemconfig(timer_text, text="00:00")
+    tick.config(text="")
+    global reps
+    reps = 0
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 
@@ -27,13 +37,13 @@ def start_timer():
     long_break_sec = LONG_BREAK_MIN * 60
 
     if reps % 8 == 0:
-        timer.config(text="Break", fg=RED)
+        timer_label.config(text="Break", fg=RED)
         countdown(long_break_sec)
     elif reps % 2 == 0:
-        timer.config(text="Break", fg=PINK)
+        timer_label.config(text="Break", fg=PINK)
         countdown(short_break_sec)
     else:
-        timer.config(text="Work", fg=GREEN)
+        timer_label.config(text="Work", fg=GREEN)
         countdown(work_sec)
     #how do i get it to countdown from say 5 minutes? Well, gotta multiply 5 by 60, so that when the
     # countdown function gets called, it counts down for 300 seconds....which is essentially 5 mins....but there's a bit
@@ -62,7 +72,9 @@ def countdown(count):
 
     canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
     if count > 0:
-        window.after(1000, countdown, count-1)
+        global timer
+        timer = window.after(1000, countdown, count-1) #this is the thing we want to cancel, and if we want to cancel it,
+        #we have to give it a name and put it inside a variable. But i need the scope to be global so i can access it in other places also
     else:
         start_timer() #calling the timer function again once we count down to zero
         #for every 2 reps, we have completed one 25min work session...one checkmark for every work session
@@ -85,13 +97,13 @@ canvas.create_image(100, 112, image=tomato_img)
 timer_text = canvas.create_text(100, 130, text="00:00", fill="white", font=(FONT_NAME, 35, 'bold')) #created it as a variable so that i can change its value in tied functions
 canvas.grid(row=1, column=1)
 
-timer = Label(text="Timer", font=(FONT_NAME, 45, 'bold'), fg=GREEN, bg=YELLOW, highlightthickness=0)
-timer.grid(row=0, column=1)
+timer_label = Label(text="Timer", font=(FONT_NAME, 45, 'bold'), fg=GREEN, bg=YELLOW, highlightthickness=0)
+timer_label.grid(row=0, column=1)
 
 start_button = Button(text="Start", highlightthickness=0, command=start_timer) #tied the function call to the button press
 start_button.grid(row=2, column=0)
 
-reset_button = Button(text="Reset", highlightthickness=0)
+reset_button = Button(text="Reset", highlightthickness=0, command=reset_timer)
 reset_button.grid(row=2, column=2)
 
 tick = Label(text="", fg=GREEN, bg=YELLOW, highlightthickness=0) #start out as empty
