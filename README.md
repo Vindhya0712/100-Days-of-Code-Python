@@ -18,7 +18,7 @@ for Software Engineering, AI and Machine Learning.
 
 ## Progress
 
-Current Progress: 27/100 Days Completed
+Current Progress: 28/100 Days Completed
 
 | Day    | Project Name                               | Status                                  |
 |--------|--------------------------------------------|-----------------------------------------|
@@ -49,7 +49,8 @@ Current Progress: 27/100 Days Completed
 | 25 +   | India States Game (Independent Project)    | ✅ Completed                            |
 | 26     | NATO Phonetic Alphabet Generator           | ✅ Completed                            |
 | 27     | Miles to Km Converter Widget               | ✅ Completed                            |
-| 28     | Coming Soon                                | ⌛                                      |
+| 28     | Pomodoro Timer App                         | ✅ Completed                            |
+| 29     | Coming Soon                                | ⌛                                      |
 
 ## Repository Structure
 
